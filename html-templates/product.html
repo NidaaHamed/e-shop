@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>E-SHOP</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styleee.css">
+
+  </head>
+  <body>
+    <!-- ====== Header ====== -->
+    <header id="header" class="sticky-top color-primary-bg">
+      <nav class="navbar navbar-expand-lg navbar-dark color-primary-bg m-auto">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">E-Shop</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ContactUs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" tabindex="-1">AboutUs</a>
+              </li>
+            </ul>
+            <form method="post" class="d-flex" action="search.php">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-default btn-flat text-white" type="submit"><i class="fa fa-search"></i></button>
+            </form>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle rounded-pill color-primary-bg" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="font-size-20 text-white"><i class="fa fa-shopping-cart"></i></span>
+                <span class="px-3 py-2 rounded-pill bg-light text-dark">0</span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+              </ul>
+            </li>
+
+            <a class="btn btn-default color-secondary-bg text-white" href="signup.php">Start Shoping</a>
+
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-site">
+
+      <!-- Product -->
+      <section id="product" class="py-3">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+              <img src="./images/nokia-c1.jpg" alt="product" class="img-fluid" style="">
+              <form class="" action="" method="post">
+                <div class="row pt-4 font-size-16 font-cairo">
+                  <div class="col">
+                    <button type="submit" class="btn btn-danger form-control">Proceed to Buy</button>
+                  </div>
+                  <div class="col">
+                    <button type="submit" class="btn btn-warning form-control">Add to Cart</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="col-sm-6 py-5">
+              <h5 class="font-amiri font-siz-20">Nokia C1</h5>
+              <small>by Nokia</small>
+              <div class="d-flex">
+                <div class="rating text-warning font-size-12">
+                  <span> <i class="fas fa-star"></i> </span>
+                  <span> <i class="fas fa-star"></i> </span>
+                  <span> <i class="fas fa-star"></i> </span>
+                  <span> <i class="fas fa-star"></i> </span>
+                  <span> <i class="far fa-star"></i> </span>
+                </div>
+                <a href="#" class="px-2 font-cairo font-size-14">20,534 rating | 1000+ answered questions</a>
+              </div>
+              <hr class="m-0">
+
+              <!-- product Price -->
+                <table class="my-3">
+                  <tr class="font-cairo font-size-14">
+                    <td>M.R.P.</td>
+                    <td><strike>$162.00</strike></td>
+                  </tr>
+                  <tr class="font-cairo font-size-14">
+                    <td>Deal Price</td>
+                    <td class="font-size-20 text-danger">$<span>152.00</span></td>
+                  </tr>
+                  <tr class="font-cairo font-size-14">
+                    <td>You Save</td>
+                    <td class="font-size-16 text-danger">$<span>10.00</span></td>
+                  </tr>
+                </table>
+              <!-- end of product Price -->
+              <!-- Policy -->
+                <div id="policy">
+                  <div class="d-flex">
+                    <div class="return text-center mr-5">
+                      <div class="font-size-20 my-2 color-secondary">
+                        <span class="fas fa-retweet border p-3 rounded-pill"></span>
+                      </div>
+                      <a href="#" class="font-cairo font-size-12">10 Days <br> Replacement</a>
+                    </div>
+                    <div class="return text-center mr-5">
+                      <div class="font-size-20 my-2 color-secondary">
+                        <span class="fas fa-truck border p-3 rounded-pill"></span>
+                      </div>
+                      <a href="#" class="font-cairo font-size-12">E-shop<br> Deliverd</a>
+                    </div>
+                    <div class="return text-center mr-5">
+                      <div class="font-size-20 my-2 color-secondary">
+                        <span class="fas fa-check-double border p-3 rounded-pill"></span>
+                      </div>
+                      <a href="#" class="font-cairo font-size-12">1 Year <br> Warranty</a>
+                    </div>
+                  </div>
+                </div>
+              <!-- end of Policy -->
+              <hr>
+              <!-- Order details -->
+              <div id="order-details" class="font-cairo d-flex flex-column text-dark">
+                <small>Delivery by : Mar 29 -Apr 1</small>
+                <small>Sold by <a href="#">E-shop</a>(4.5 out of 5 | 18.198 ratings)</small>
+                <small><i class="fas fa-map-marker-alt color-primary"></i>&nbsp;&nbsp;Deliver to customer - 424201</small>
+              </div>
+              <!-- end of Order details -->
+
+              <div class="row">
+                <div class="col-6">
+                  <div class="color my-3">
+                    <div class="d-flex justify-content-between">
+                      <h6 class="font-reemkufi">Color:</h6>
+                      <div class="p-2 color-yellow-bg rounded-circle"><button class="btn font-size-14"></button></div>
+                      <div class="p-2 color-primary-bg rounded-circle"><button class="btn font-size-14"></button></div>
+                      <div class="p-2 color-secondary-bg rounded-circle"><button class="btn font-size-14"></button></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="qty my-3 d-flex justify-content-between">
+                    <h6 class="font-reemkufi">Qty:</h6>
+                    <div class="px-4 d-flex font-cairo">
+                      <button data-id="pro1" class="qty-up border bg-light"><i class="fas fa-angle-up"></i></button>
+                      <input data-id="pro1" type="text" class="qty_input border px-2 w-50 bg-light" name="" value="1">
+                      <button data-id="pro1" class="qty-down border bg-light"><i class="fas fa-angle-down"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="size my-3">
+                <h6 class="font-reemkufi">Size :</h6>
+                <div class="d-flex justify-content-between w-75">
+                  <div class="font-cairo border p-2">
+                    <button class="btn p-0 font-size-14">1GB RAM</button>
+                  </div>
+                  <div class="font-cairo border p-2">
+                    <button class="btn p-0 font-size-14">2GB RAM</button>
+                  </div>
+                  <div class="font-cairo border p-2">
+                    <button class="btn p-0 font-size-14">3GB RAM</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <h6 class="font-amiri">Product Description</h6>
+              <hr>
+              <p class="font-cairo font-size-14">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p class="font-cairo font-size-14">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of Product -->
+
+        <!-- Top Sale -->
+          <section id="top-sale">
+            <div class="container py-5">
+              <h4 class="font-amiri font-size-20">Top Sale</h4>
+              <hr>
+              <div class="owl-carousel owl-theme">
+                <div class="item py-2">
+                  <div class="product font-reemkufi">
+                    <a href="#"> <img src="./images/dell-g5-15-5590-gaming-laptop.jpg" alt="product" class="img-fluid px-2"> </a>
+                    <div class="text-center">
+                      <h6>Dell-g5-15-5590 Gaming</h6>
+                      <div class="rating text-warning font-size-12">
+                        <span> <i class="fas fa-star"></i> </span>
+                        <span> <i class="fas fa-star"></i> </span>
+                        <span> <i class="fas fa-star"></i> </span>
+                        <span> <i class="fas fa-star"></i> </span>
+                        <span> <i class="far fa-star"></i> </span>
+                      </div>
+                      <div class="price py-2">
+                        <span>1630$</span>
+                      </div>
+                      <button type="submit" name="button" class="btn btn-warning font-size-12">Add to Cart</button>
+                    </div>
+
+                  </div>
+
+                </div>
+                <div class="item py-2">
+                  <div class="product font-reemkufi">
+                    <a href="#"> <img src="./images/oppo-A12.jpg" alt="product" class="img-fluid px-2"> </a>
+                    <div class="text-center">
+                      <h6>Oppo A12</h6>
+                      <div class="rating text-warning font-size-12">
+                        <span> <i class="fas fa-star"></i> </span>
+                        <span> <i class="fas fa-star"></i> </span>
+                        <span> <i class="fas fa-star"></i> </span>
+                        <span> <i class="fas fa-star"></i> </span>
+                        <span> <i class="far fa-star"></i> </span>
+                      </div>
+                      <div class="price py-2">
+                        <span>250$</span>
+                      </div>
+                      <button type="submit" name="button" class="btn btn-warning font-size-12">Add to Cart</button>
+                    </div>
+
+                  </div>
+
+                </div>
+                <div class="item py-2">
+                  <div class="product font-reemkufi">
+                    <a href="#"> <img src="./images/apple-ipad-8th-generation.jpg" alt="product" class="img-fluid px-2"> </a>
+                    <div class="text-center">
+                      <h6>Apple Ipad 8th gen</h6>
+                      <div class="rating text-warning font-size-12">
+                        <span> <i class="fas fa-star"></i> </span>
+                        <span> <i class="fas fa-star"></i> </span>
+                        <span> <i class="fas fa-star"></i> </span>
+                        <span> <i class="fas fa-star"></i> </span>
+                        <span> <i class="far fa-star"></i> </span>
+                      </div>
+                      <div class="price py-2">
+                        <span>1000$</span>
+                      </div>
+                      <button type="submit" name="button" class="btn btn-warning font-size-12">Add to Cart</button>
+                    </div>
+
+                  </div>
+
+                </div>
+                <div class="item py-2">
+                  <div class="product font-reemkufi">
+                    <a href="#"> <img src="./images/infinix-note-8.jpg" alt="product" class="img-fluid px-2"> </a>
+                    <div class="text-center">
+                      <h6>Infinix Note 8</h6>
+                      <div class="rating text-warning font-size-12">
+                        <span> <i class="fas fa-star"></i> </span>
+                        <span> <i class="fas fa-star"></i> </span>
+                        <span> <i class="fas fa-star"></i> </span>
+                        <span> <i class="fas fa-star"></i> </span>
+                        <span> <i class="far fa-star"></i> </span>
+                      </div>
+                      <div class="price py-2">
+                        <span>230$</span>
+                      </div>
+                      <button type="submit" name="button" class="btn btn-warning font-size-12">Add to Cart</button>
+                    </div>
+
+                  </div>
+
+                </div>
+                <div class="item py-2">
+                  <div class="product font-reemkufi">
+                    <a href="#"> <img src="./images/huawei-y8p.jpg" alt="product" class="img-fluid px-2"> </a>
+                    <div class="text-center">
+                      <h6>Huawei Y8P</h6>
+                      <div class="rating text-warning font-size-12">
+                        <span> <i class="fas fa-star"></i> </span>
+                        <span> <i class="fas fa-star"></i> </span>
+                        <span> <i class="fas fa-star"></i> </span>
+                        <span> <i class="fas fa-star"></i> </span>
+                        <span> <i class="far fa-star"></i> </span>
+                      </div>
+                      <div class="price py-2">
+                        <span>230$</span>
+                      </div>
+                      <button type="submit" name="button" class="btn btn-warning font-size-12">Add to Cart</button>
+                    </div>
+
+                  </div>
+
+                </div>
+                <div class="item py-2">
+                  <div class="product font-reemkufi">
+                    <a href="#"> <img src="./images/apple-iphone-6s.jpg" alt="product" class="img-fluid px-2"> </a>
+                    <div class="text-center">
+                      <h6>Iphone 6s</h6>
+                      <div class="rating text-warning font-size-12">
+                        <span> <i class="fas fa-star"></i> </span>
+                        <span> <i class="fas fa-star"></i> </span>
+                        <span> <i class="fas fa-star"></i> </span>
+                        <span> <i class="fas fa-star"></i> </span>
+                        <span> <i class="far fa-star"></i> </span>
+                      </div>
+                      <div class="price py-2">
+                        <span>230$</span>
+                      </div>
+                      <button type="submit" name="button" class="btn btn-warning font-size-12">Add to Cart</button>
+                    </div>
+
+                  </div>
+
+                </div>
+                <div class="item py-2">
+                  <div class="product font-reemkufi">
+                    <a href="#"> <img src="./images/lenovo-leglon-5-gaming.jpg" alt="product" class="img-fluid px-2"> </a>
+                    <div class="text-center">
+                      <h6>Lenovo Leglon 5 Gaming</h6>
+                      <div class="rating text-warning font-size-12">
+                        <span> <i class="fas fa-star"></i> </span>
+                        <span> <i class="fas fa-star"></i> </span>
+                        <span> <i class="fas fa-star"></i> </span>
+                        <span> <i class="fas fa-star"></i> </span>
+                        <span> <i class="far fa-star"></i> </span>
+                      </div>
+                      <div class="price py-2">
+                        <span>1330$</span>
+                      </div>
+                      <button type="submit" name="button" class="btn btn-warning font-size-12">Add to Cart</button>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </section>
+        <!-- End of Top Sale -->
+
+    </main>
+
+    <footer id="footer" class="bg-dark text-white py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-12">
+            <h4 class="font-amiri font-size-20">E-shop</h4>
+            <p class="font-size-14 font-cairo text-white-50">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+          </div>
+          <div class="col-lg-4 col-12">
+            <h4 class="font-amiri font-size-20">Newsletter</h4>
+            <form class="form-row" action="" method="post">
+              <div class="row">
+                <div class="col">
+                  <input type="text" name="" value="" class="form-control" placeholder="Email">
+                </div>
+                <div class="col">
+                  <button type="submit" class="btn btn-primary mb-2">Subscribe</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-2 col-12">
+            <h4 class="font-amiri font-size-20">Newsletter</h4>
+            <div class="d-flex flex-column flex-wrap">
+              <a href="#" class="font-reemkufi font-size-14 text-white-50 pb-1">About Us</a>
+              <a href="#" class="font-reemkufi font-size-14 text-white-50 pb-1">Delivery Information</a>
+              <a href="#" class="font-reemkufi font-size-14 text-white-50 pb-1">Privacy Policy</a>
+              <a href="#" class="font-reemkufi font-size-14 text-white-50 pb-1">Terms & Conditions</a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-12">
+            <h4 class="font-amiri font-size-20">Account</h4>
+            <div class="d-flex flex-column flex-wrap">
+              <a href="#" class="font-reemkufi font-size-14 text-white-50 pb-1">My Account</a>
+              <a href="#" class="font-reemkufi font-size-14 text-white-50 pb-1">Order History</a>
+              <a href="#" class="font-reemkufi font-size-14 text-white-50 pb-1">Wish List</a>
+              <a href="#" class="font-reemkufi font-size-14 text-white-50 pb-1">Newsletter</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="copyright text-center bg-dark text-white py-2">
+      <p class="font-reemkufi font-size-14">&copy; copyrights 2021 Developed By Nidaa Sallam</p>
+    </div>
+
+
+
+    <!-- <footer class="footer text-center">copyrights &copy; Nidaa Sallam 2021</footer> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous"></script>
+    <script src="index.js" type="text/javascript"></script>
+  </body>
+</html>

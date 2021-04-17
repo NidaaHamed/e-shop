@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Amiri&family=Cairo&family=Reem+Kufi&display=swap");
+/* SASS TEMPLATE */
+/* global classes */
+body{
+  background-color: #F4F4F4;
+  font-size: 16px;
+}
+button, button:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* typography classes*/
+.font-cairo {
+  font-family: "Cairo", sans-serif;
+}
+
+.font-amiri {
+  font-family: "Amiri", serif;
+}
+
+.font-reemkufi {
+  font-family: "Reem Kufi", sans-serif;
+}
+
+.font-size-12 {
+  font-size: 12px;
+}
+
+.font-size-14 {
+  font-size: 14px;
+}
+
+.font-size-16 {
+  font-size: 16px;
+}
+
+.font-size-20 {
+  font-size: 20px;
+}
+
+/* Color Template*/
+.color-primary {
+  color: #264653;
+}
+
+.color-primary-bg {
+  background: #264653;
+}
+
+.color-secondary {
+  color: #e9c46a;
+}
+
+.color-secondary-bg {
+  background: #e9c46a;
+}
+
+.color-yellow {
+  color: #E76F51;
+}
+
+.color-yellow-bg {
+  background: #E76F51;
+}
+
+.navbar-dark .navbar-brand, .navbar-dark .navbar-nav .nav-link {
+    color: #e9c46a;
+}
+
+#top-sale .owl-carousel .item .product a {
+  overflow: hidden;
+}
+#top-sale .owl-carousel .item .product img {
+  height: 200px !important;
+  transition: transform 0.5s ease;
+}
+#top-sale .owl-carousel .item .product img:hover {
+  transform: scale(1.1);
+}
+#top-sale .owl-carousel .owl-nav button {
+  position: absolute;
+  top: 30%;
+  outline: none;
+}
+#top-sale .owl-carousel .owl-nav button.owl-prev {
+  left: 0;
+}
+#top-sale .owl-carousel .owl-nav button.owl-prev span, #top-sale .owl-carousel .owl-nav button.owl-next span {
+  font-size: 35px;
+  color: #540D6E;
+  padding: 0 1rem;
+}
+#top-sale .owl-carousel .owl-nav button.owl-prev span {
+  margin-left: -4rem;
+}
+#top-sale .owl-carousel .owl-nav button.owl-next {
+  right: 0;
+}
+#top-sale .owl-carousel .owl-nav button.owl-next span {
+  margin-right: -4rem;
+}
+
+/* Special Price Section Template */
+#product-brands .grid .grid-item {
+  margin-right: 1.2rem;
+  margin-top: 1rem;
+}
+#product-brands .grid .grid-item .item .product img {
+  height: 250px !important;
+}
+
+
+
+/*# sourceMappingURL=styleee.css.map */
